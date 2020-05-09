@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../shared/images/logo.svg";
 import "./App.css";
 import Todo from "./Todo/Todo";
+import Timer from "./Pomodoro/Timer";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 function App() {
@@ -11,7 +12,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header title="my app" />
-			<Todo message={10000.0} />
+			<Timer />
 			<Footer />
 		</div>
 	);

@@ -12,6 +12,15 @@ class Todo extends Component {
 		task: "",
 		tasks: []
 	};
+	componentWillMount() {
+		this.setState({
+			tasks: [
+				{ id: 0, task: "task1" },
+				{ id: 1, task: "task2" },
+				{ id: 2, task: "task3" }
+			]
+		});
+	}
 	handleOnSubmit = event => {
 		console.log(this.state.task);
 		this.setState({
